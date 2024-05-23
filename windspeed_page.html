@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><!-- Begin Heading Group A -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Wind Speed page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!--This resizes the screen based upon different devices-->
+
+  <!-- Bring in our bootstrap  CSS stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+    <!--CSS Link-->
+  <link rel="stylesheet" type="text/css" href="style.css"><!--style.css is a file which contains all of the styles-->
+</head><!-- End Heading Group A -->
+
+<body>
+  <!--Navigation section on top of page-->
+  <!-- This section handles the top Latitude button-->
+  <div class="navigation"><!--div 1A-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" style ="background-color:rgb(90, 205, 195)", href="index.html">Latitude</a>
+        <button class="navbar-toggler border-white" type="button" data-toggle="collapse" data-target="#navbarnavdropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <!-- This section handles the Plots drop down-->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="temperature_page.html">Max Temperature</a>
+                <a class="dropdown-item" href="humidity_page.html">Humidity</a>
+                <a class="dropdown-item" href="windspeed_page.html">Wind Speed</a>
+                <a class="dropdown-item" href="cloudiness_page.html">Cloudiness</a>
+              </div>
+          </li>
+    <!-- This section handles the comparison and the Data buttons-->          
+          <li class="nav-item">
+            <a class="nav-link" href="comparison_page.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data_page.html">Data</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+<!-- The following section is for the content of the main Index for HTML screen-->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 col-md-12">
+        <div class="box">
+          <h3 class="title">Latitude vs. Wind Speed</h3>
+          <hr> <!-- This inserts a blank line-->
+            <img src="Resources\latitude_vs_windspeed_plot.png" class="visualization rounded image-wrapper float-left" alt="Wind Speed Graph">
+            <p>The majority of the cities were experiencing humidity levels greater than 40-50%.  On very humid days the air outside
+                is very stagnant and you hardly feel any type of breeze.  Looking at the Wind Speed scatter plot the majority of the 
+                cities were experiencing Wind Speeds between 0 to 10 mph.</p>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-12">
+          <div class="box"> <!--This is for the box on the right side of screen-->
+            <h5 class="title">Visualizations</h5>       
+            <hr> <!-- This inserts a blank line-->
+ 
+            
+                  <div class="container">
+                    <div class="row" style="padding-bottom: 30px;">
+                      <div class="col-6">
+                        <a href="temperature_page.html">
+                          <img class="panel" src="Resources\latitude_vs_temperature_plot.png" alt="Max Temperature Graph">
+                        </a>
+                      </div>
+                      <div class="col-6">
+                        <a href="humidity_page.html">
+                          <img class="panel" src="Resources\latitude_vs_humidity_plot.png" alt="Humidity Graph">
+                        </a>
+                      </div>
+                    </div>
+        
+                    <div class="row" style="padding-bottom: 30px;">
+                      <div class="col-6">
+                        <a href="cloudiness_page.html">
+                          <img class="panel" src="Resources\latitude_vs_cloudiness_plot.png" alt="Cloudiness Graph">
+                        </a>
+                      </div>
+                      <div class="col-6">
+                        <a href="windspeed_page.html">
+                          <img class="panel" src="Resources\latitude_vs_windspeed_plot.png" alt="Wind Speed Graph">
+                        </a>
+                      </div>
+                    
+                    </div>
+                  </div>   
+      
+        </div>         
+      </div>
+    </div>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script> 
+  
+
+</body>
+
+</html> 
+
+
+
